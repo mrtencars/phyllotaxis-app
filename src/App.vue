@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Definition name="Zylinderprojektion">
+    Eine Zylinderprojektion macht schöne Sachen.
+  </Definition>
+  <Aufgabe>
+    Bitte wasche Deine Hände!
+    <Hinweis>Benutze die Toilette!</Hinweis>
+  </Aufgabe>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Definition from './components/Definition.vue'
+import Aufgabe from './components/Aufgabe.vue'
+import Hinweis from "@/components/Hinweis";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Definition,Aufgabe,Hinweis
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
